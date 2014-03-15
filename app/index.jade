@@ -1,0 +1,74 @@
+doctype
+html
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    title Gulpy-pages
+    meta(name='description', content='A small recipe to start using beautiful languages like CoffeeScript, Jade and LESS and publishing it on GitHub pages')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Dancing Script|Roboto:300')
+    link(rel='stylesheet', href='css/style.css')
+  body
+    <!--[if lt IE 8]>
+    p.browsehappy.
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    <![endif]-->
+
+    .jumbotron.text-center
+      h1 Gulpy pages
+      .subtitle A small recipe to start using beautiful languages like&#32;
+        a.text-warning(href='http://coffeescript.org') CoffeeScript
+        | ,&#32;
+        a.text-success(href='http://jade-lang.org') Jade
+        |  and&#32;
+        a.text-info(href='http://lesscss.org')  LESS
+        |  and publishing it on&#32;
+        a.text-danger(href='http://pages.github.com')  GitHub pages
+        | .
+
+    .container
+      .row.text-center
+        .col-lg-4
+          i.text-warning.fa.fa-github.fa-5x
+          h2.text-warning Clone
+          p
+            pre git clone git@github.com:davinov/gulpy-pages.git [name-of-your-project]
+          p Create your GitHub repo and change the original remote
+            pre git remote set-url origin [your-github-repo-url]
+          p Install npm / node then gulp
+            pre [sudo] npm install -g gulp
+            pre npm install
+          p
+            a.btn.btn-warning(href='https://github.com/davinov/gulpy-pages') Go to GitHub repo »
+
+        .col-lg-4
+          i.text-success.fa.fa-code.fa-5x
+          h2.text-success Develop
+          p Modify files in app folder and compile then with
+            pre gulp build
+          p Or watch for changes in your code with
+            pre gulp watch
+          p Install dependencies using bower or directly add them in vendor folder
+          p
+            a.btn.btn-success(href='http://localhost:3000') See your site live at localhost:3000 »
+        
+        .col-lg-4.color-3
+          i.text-info.fa.fa-globe.fa-5x
+          h2.text-info Publish
+
+          p Compile, minify, commit your changes in public folder then push them on gh-pages branch
+            pre ./publish.sh
+          p
+            a.btn.btn-info(href='#') See your site published »
+
+    script(src='js/vendor.js')
+    script(src='js/templates.js')
+    script(src='js/app.js')
+    script.
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');

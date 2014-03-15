@@ -1,0 +1,37 @@
+{
+  "name": "gulpy-pages",
+  "version": "0.0.0",
+  "homepage": "https://github.com/davinov/gulpy-pages",
+  "authors": [
+    "David Nowinsky <david@nowinsky.net>"
+  ],
+  "description": "A small recipe to start using beautiful languages like CoffeeScript, Jade ans LESS and publishing it on GitHub pages",
+  "main": "public/index.html",
+  "keywords": [
+    "gulp",
+    "github-pages",
+    "coffeescript",
+    "angular",
+    "less",
+    "jade"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.14",
+    "font-awesome": "~4.0.3",
+    "bootstrap": "~3.1.1"
+  },
+  "overrides": {
+    "font-awesome": {
+      "main": "./font-awesome.css"
+    }
+  }
+}
