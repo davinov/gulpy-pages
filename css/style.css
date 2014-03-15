@@ -7112,6 +7112,43 @@ button.close {
 .fa-plus-square-o:before {
   content: "\f196";
 }
+.header {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eeeeee;
+  background: url('../img/geometry.png');
+  text-align: center;
+}
+.header h1,
+.header .h1 {
+  color: inherit;
+}
+.header p {
+  margin-bottom: 15px;
+  font-size: 21px;
+  font-weight: 200;
+}
+.container .header {
+  border-radius: 6px;
+}
+.header .container {
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+  .container .header {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  .header h1,
+  .header .h1 {
+    font-size: 63px;
+  }
+}
 .subtitle {
   color: #999999;
   font-size: 18px;

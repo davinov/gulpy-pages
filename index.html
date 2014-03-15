@@ -14,7 +14,7 @@
       You are using an <strong>outdated</strong> browser.
       Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p><![endif]-->
-    <div class="jumbotron text-center">
+    <div class="header">
       <h1>Gulpy pages</h1>
       <div class="subtitle">A small recipe to start using beautiful languages like&#32;<a href="http://coffeescript.org" class="text-warning">CoffeeScript</a>,&#32;<a href="http://jade-lang.org" class="text-success">Jade</a> and&#32;<a href="http://lesscss.org" class="text-info"> LESS</a> and publishing it on&#32;<a href="http://pages.github.com" class="text-danger"> GitHub pages</a>.</div>
     </div>
@@ -47,6 +47,13 @@
         </div>
         <div class="col-lg-4 color-3"><i class="text-info fa fa-globe fa-5x"></i>
           <h2 class="text-info">Publish</h2>
+          <p>Init the gh-pages branch in your public directory
+            <pre>cd public
+git init
+git branch --orphan gh-pages
+git remote add origin [your-github-repo-url]
+cd ..</pre>
+          </p>
           <p>Compile, minify, commit your changes in public folder then push them on gh-pages branch
             <pre>./publish.sh</pre>
           </p>
