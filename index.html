@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Gulpy-pages</title>
+    <meta name="description" content="A small recipe to start using beautiful languages like CoffeeScript, Jade and LESS and publishing it on GitHub pages">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dancing Script|Roboto:300">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body><!--[if lt IE 8]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser.
+      Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </p><![endif]-->
+    <div class="jumbotron text-center">
+      <h1>Gulpy pages</h1>
+      <div class="subtitle">A small recipe to start using beautiful languages like&#32;<a href="http://coffeescript.org" class="text-warning">CoffeeScript</a>,&#32;<a href="http://jade-lang.org" class="text-success">Jade</a> and&#32;<a href="http://lesscss.org" class="text-info"> LESS</a> and publishing it on&#32;<a href="http://pages.github.com" class="text-danger"> GitHub pages</a>.</div>
+    </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-4"><i class="text-warning fa fa-github fa-5x"></i>
+          <h2 class="text-warning">Clone</h2>
+          <p>
+            <pre>git clone git@github.com:davinov/gulpy-pages.git [name-of-your-project]</pre>
+          </p>
+          <p>Create your GitHub repo and change the original remote
+            <pre>git remote set-url origin [your-github-repo-url]</pre>
+          </p>
+          <p>Install npm / node then gulp
+            <pre>[sudo] npm install -g gulp</pre>
+            <pre>npm install</pre>
+          </p>
+          <p><a href="https://github.com/davinov/gulpy-pages" class="btn btn-warning">Go to GitHub repo »</a></p>
+        </div>
+        <div class="col-lg-4"><i class="text-success fa fa-code fa-5x"></i>
+          <h2 class="text-success">Develop</h2>
+          <p>Modify files in app folder and compile then with
+            <pre>gulp build</pre>
+          </p>
+          <p>Or watch for changes in your code with
+            <pre>gulp watch</pre>
+          </p>
+          <p>Install dependencies using bower or directly add them in vendor folder</p>
+          <p><a href="http://localhost:3000" class="btn btn-success">See your site live at localhost:3000 »</a></p>
+        </div>
+        <div class="col-lg-4 color-3"><i class="text-info fa fa-globe fa-5x"></i>
+          <h2 class="text-info">Publish</h2>
+          <p>Compile, minify, commit your changes in public folder then push them on gh-pages branch
+            <pre>./publish.sh</pre>
+          </p>
+          <p><a href="#" class="btn btn-info">See your site published »</a></p>
+        </div>
+      </div>
+    </div>
+    <script src="js/vendor.js"></script>
+    <script src="js/templates.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>
