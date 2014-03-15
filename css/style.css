@@ -5608,7 +5608,9 @@ button.close {
 .panel-body:before,
 .panel-body:after,
 .modal-footer:before,
-.modal-footer:after {
+.modal-footer:after,
+footer:before,
+footer:after {
   content: " ";
   display: table;
 }
@@ -5625,7 +5627,8 @@ button.close {
 .navbar-collapse:after,
 .pager:after,
 .panel-body:after,
-.modal-footer:after {
+.modal-footer:after,
+footer:after {
   clear: both;
 }
 .center-block {
@@ -7112,7 +7115,7 @@ button.close {
 .fa-plus-square-o:before {
   content: "\f196";
 }
-.header {
+header {
   padding: 30px;
   margin-bottom: 30px;
   color: inherit;
@@ -7120,36 +7123,73 @@ button.close {
   background: url('../img/geometry.png');
   text-align: center;
 }
-.header h1,
-.header .h1 {
+header h1,
+header .h1 {
   color: inherit;
 }
-.header p {
+header p {
   margin-bottom: 15px;
   font-size: 21px;
   font-weight: 200;
 }
-.container .header {
+.container header {
   border-radius: 6px;
 }
-.header .container {
+header .container {
   max-width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .header {
+  header {
     padding-top: 48px;
     padding-bottom: 48px;
   }
-  .container .header {
+  .container header {
     padding-left: 60px;
     padding-right: 60px;
   }
-  .header h1,
-  .header .h1 {
+  header h1,
+  header .h1 {
     font-size: 63px;
   }
 }
-.subtitle {
+header .subtitle {
   color: #999999;
   font-size: 18px;
+}
+footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-top: solid 1px #eeeeee;
+  margin-top: 3em;
+  padding-top: 6px;
+  color: #999999;
+}
+@media (min-width: 768px) {
+  footer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  footer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  footer {
+    width: 1170px;
+  }
+}
+footer > .navbar-header,
+footer > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  footer > .navbar-header,
+  footer > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
 }

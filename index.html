@@ -14,10 +14,10 @@
       You are using an <strong>outdated</strong> browser.
       Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     </p><![endif]-->
-    <div class="header">
+    <header>
       <h1>Gulpy pages</h1>
       <div class="subtitle">A small recipe to start using beautiful languages like&#32;<a href="http://coffeescript.org" class="text-warning">CoffeeScript</a>,&#32;<a href="http://jade-lang.org" class="text-success">Jade</a> and&#32;<a href="http://lesscss.org" class="text-info"> LESS</a> and publishing it on&#32;<a href="http://pages.github.com" class="text-danger"> GitHub pages</a>.</div>
-    </div>
+    </header>
     <div class="container">
       <div class="row text-center">
         <div class="col-lg-4"><i class="text-warning fa fa-github fa-5x"></i>
@@ -32,7 +32,6 @@
             <pre>[sudo] npm install -g gulp</pre>
             <pre>npm install</pre>
           </p>
-          <p><a href="https://github.com/davinov/gulpy-pages" class="btn btn-warning">Go to GitHub repo »</a></p>
         </div>
         <div class="col-lg-4"><i class="text-success fa fa-code fa-5x"></i>
           <h2 class="text-success">Develop</h2>
@@ -43,7 +42,6 @@
             <pre>gulp watch</pre>
           </p>
           <p>Install dependencies using bower or directly add them in vendor folder</p>
-          <p><a href="http://localhost:3000" class="btn btn-success">See your site live at localhost:3000 »</a></p>
         </div>
         <div class="col-lg-4 color-3"><i class="text-info fa fa-globe fa-5x"></i>
           <h2 class="text-info">Publish</h2>
@@ -57,10 +55,19 @@ cd ..</pre>
           <p>Compile, minify, commit your changes in public folder then push them on gh-pages branch
             <pre>./publish.sh</pre>
           </p>
-          <p><a href="#" class="btn btn-info">See your site published »</a></p>
         </div>
       </div>
     </div>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-lg-4"><a href="https://github.com/davinov/gulpy-pages" class="btn btn-warning">Go to GitHub repo »</a></div>
+        <div class="col-lg-4"><a href="http://localhost:3000" class="btn btn-success">See your site live at localhost:3000 »</a></div>
+        <div class="col-lg-4"><a href="#" class="btn btn-info">See your site published »</a></div>
+      </div>
+    </div>
+    <footer><p>Made an afternoon I was tired of <a href="http://brunch.io">brunch</a> and tried <a href="http://gulpjs.com">gulp</a> instead.
+<a href="http://david.nowinsky.net">@davinov</a></p>
+    </footer>
     <script src="js/vendor.js"></script>
     <script src="js/templates.js"></script>
     <script src="js/app.js"></script>
