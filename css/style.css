@@ -7152,6 +7152,9 @@ header .container {
     font-size: 63px;
   }
 }
+header h1 {
+  color: #492d61;
+}
 header .subtitle {
   color: #999999;
   font-size: 18px;
