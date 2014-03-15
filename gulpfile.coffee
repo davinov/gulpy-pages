@@ -45,9 +45,9 @@ gulp.task 'serve', ['assets', 'compile'], serve PUBLIC_PATH
 
 gulp.task 'watch', ['build'], ->
   gulp.watch APP_PATH+'/**/*.coffee', ['coffee']
-  gulp.watch APP_PATH+'/**/*.jade', ['templates']
+  gulp.watch APP_PATH + '/*.jade', ['jade']
+  gulp.watch APP_PATH+'/*/**/*.jade', ['templates']
   gulp.watch APP_PATH+'/**/*.less', ['less']
-  gulp.watch APP_PATH+'/*.jade', ['jade']
   gulp.watch ASSETS_PATH, ['assets']
   gulp.watch 'bower_components', ['vendor']
   gulp.watch VENDOR_PATH, ['vendor']
