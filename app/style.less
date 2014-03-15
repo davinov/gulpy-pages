@@ -14,13 +14,22 @@
 
 @headings-color: @brand-primary;
 
-.header {
+header {
   .jumbotron;
   background: url('../img/geometry.png');
   .text-center;
+
+  .subtitle {
+    .text-muted;
+    font-size: @font-size-h4;
+  }
 }
 
-.subtitle {
+footer {
+  .container;
+  border-top: solid 1px @gray-lighter;
+  margin-top: 3em;
+  padding-top: @padding-base-vertical;
   .text-muted;
-  font-size: @font-size-h4;
 }
+

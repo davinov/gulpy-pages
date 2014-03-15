@@ -83,6 +83,7 @@ gulp.task 'coffee', (done) ->
   gulp.src APP_PATH + '/**/*.coffee'
   .pipe changed PUBLIC_PATH
   .pipe coffee bare: true
+    .on 'error', gutil.log
   .pipe concat APP_MAIN_FILE
   .pipe gulp.dest PUBLIC_PATH + '/js'
   .on 'error', gutil.log
@@ -94,6 +95,7 @@ gulp.task 'less', (done) ->
   .pipe changed PUBLIC_PATH
   .pipe less
       paths: [ path.join __dirname ]
+    .on 'error', gutil.log
   .pipe gulp.dest PUBLIC_PATH + '/css'
   .on 'error', gutil.log
   .on 'end', done
@@ -104,6 +106,7 @@ gulp.task 'jade', (done) ->
   .pipe changed PUBLIC_PATH
   .pipe jade
       pretty: true
+    .on 'error', gutil.log
   .pipe gulp.dest PUBLIC_PATH
   .on 'error', gutil.log
   .on 'end', done
@@ -113,6 +116,7 @@ gulp.task 'templates', (done) ->
   gulp.src APP_PATH + '/*/**/*.jade'
   .pipe changed PUBLIC_PATH
   .pipe jade doctype: 'html'
+    .on 'error', gutil.log
   .pipe templateCache
       filename: TEMPLATES_FILE
       module: TEMPLATES_MODULE

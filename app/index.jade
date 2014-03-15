@@ -15,7 +15,7 @@ html
       Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     <![endif]-->
 
-    .header
+    header
       h1 Gulpy pages
       .subtitle A small recipe to start using beautiful languages like&#32;
         a.text-warning(href='http://coffeescript.org') CoffeeScript
@@ -39,8 +39,6 @@ html
           p Install npm / node then gulp
             pre [sudo] npm install -g gulp
             pre npm install
-          p
-            a.btn.btn-warning(href='https://github.com/davinov/gulpy-pages') Go to GitHub repo »
 
         .col-lg-4
           i.text-success.fa.fa-code.fa-5x
@@ -50,8 +48,6 @@ html
           p Or watch for changes in your code with
             pre gulp watch
           p Install dependencies using bower or directly add them in vendor folder
-          p
-            a.btn.btn-success(href='http://localhost:3000') See your site live at localhost:3000 »
 
         .col-lg-4.color-3
           i.text-info.fa.fa-globe.fa-5x
@@ -65,8 +61,21 @@ html
               cd ..
           p Compile, minify, commit your changes in public folder then push them on gh-pages branch
             pre ./publish.sh
-          p
-            a.btn.btn-info(href='#') See your site published »
+
+    .container
+      .row.text-center
+        .col-lg-4
+          a.btn.btn-warning(href='https://github.com/davinov/gulpy-pages') Go to GitHub repo »
+        .col-lg-4
+          a.btn.btn-success(href='http://localhost:3000') See your site live at localhost:3000 »
+        .col-lg-4
+          a.btn.btn-info(href='#') See your site published »
+
+    footer
+      :markdown
+        Made an afternoon I was tired of [brunch](http://brunch.io) and tried [gulp](http://gulpjs.com) instead.
+        [@davinov](http://david.nowinsky.net)
+
 
     script(src='js/vendor.js')
     script(src='js/templates.js')
