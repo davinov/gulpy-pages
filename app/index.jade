@@ -15,7 +15,7 @@ html
       Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     <![endif]-->
 
-    .jumbotron.text-center
+    .header
       h1 Gulpy pages
       .subtitle A small recipe to start using beautiful languages like&#32;
         a.text-warning(href='http://coffeescript.org') CoffeeScript
@@ -52,11 +52,17 @@ html
           p Install dependencies using bower or directly add them in vendor folder
           p
             a.btn.btn-success(href='http://localhost:3000') See your site live at localhost:3000 »
-        
+
         .col-lg-4.color-3
           i.text-info.fa.fa-globe.fa-5x
           h2.text-info Publish
-
+          p Init the gh-pages branch in your public directory
+            pre.
+              cd public
+              git init
+              git branch --orphan gh-pages
+              git remote add origin [your-github-repo-url]
+              cd ..
           p Compile, minify, commit your changes in public folder then push them on gh-pages branch
             pre ./publish.sh
           p
