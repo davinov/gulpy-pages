@@ -9,14 +9,11 @@ gutil = require 'gulp-util'
 changed = require 'gulp-changed'
 concat = require 'gulp-concat'
 uglify = require 'gulp-uglify'
-symlink = require 'gulp-symlink'
 serve = require 'gulp-serve'
 ## Languages
 coffee = require 'gulp-coffee'
 less = require 'gulp-less'
 jade = require 'gulp-jade'
-## Bower
-bowerFiles = require 'gulp-bower-files'
 ## Angular
 templateCache = require 'gulp-angular-templatecache'
 
@@ -62,15 +59,7 @@ gulp.task 'compile', [
   'templates'
 ]
 
-gulp.task 'bower', (done) ->
-  bowerFiles()
-  .pipe changed VENDOR_PATH
-  .pipe symlink VENDOR_PATH
-  .on 'error', gutil.log
-  .on 'end', done
-  return
-
-gulp.task 'vendor', ['bower'], (done) ->
+gulp.task 'vendor', (done) ->
   gulp.src VENDOR_PATH + '/**/*.js'
   .pipe changed PUBLIC_PATH
   .pipe concat VENDOR_MAIN_FILE
