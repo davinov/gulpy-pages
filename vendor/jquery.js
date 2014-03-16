@@ -1,1 +1,1 @@
-/home/david/dev/gulpy-pages/bower_components/jquery/dist/jquery.js
+../bower_components/jquery/dist/jquery.js
